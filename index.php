@@ -33,14 +33,6 @@
                 </div>
             </form>
         </aside>
-        <h1>
-            <?= "Books" ?>
-        </h1>
-        <h2>
-            <?php 
-            echo "Os mais temidos";
-            ?>
-        </h2>
     </header>
     <main>
         <form action="" class="form-inline">
