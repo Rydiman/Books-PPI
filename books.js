@@ -71,9 +71,19 @@ function criarMarcador(div, icone, numero){
     let spanNumero = document.createElement("span");
 
     spanIcone.className = "material-icons";
+    spanIcone.addEventListener('click', function(e){
+        let campo = e.target.parentNode.querySelector('.round')
+        let valor = parseInt(campo.innerHTML);
+        campo.innerHTML = ++valor;
+    })
     spanIcone.innerHTML = icone;
 
     spanNumero.className = "round";
+    spanNumero.addEventListener('click', function(e){
+        let campo = e.target.parentNode.querySelector('.round')
+        let valor = parseInt(campo.innerHTML);
+        campo.innerHTML = ++valor;
+    })
     spanNumero.innerHTML = numero;
 
     marcador.appendChild(spanIcone);
